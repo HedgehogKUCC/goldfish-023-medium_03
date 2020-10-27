@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.wrap {
+  margin-top: 100px;
+}
+
+.container {
+  position: relative;
+  width: 1200px;
+  margin: auto;
+}
+
+.container h1 {
+  width: 400px;
+  font-size: 90px;
+  box-sizing: border-box;
+  padding: 15px;
+  float: right;
+  color: #aaa;
+  position: relative;
+}
+
+.container h1::before {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  bottom: 0;
+  left: 0;
+  /* border: 30px solid #f1c555; */
+  background: #f1c555;
+  z-index: -1;
+  transform: rotate(20deg);
+}
+
+.container h1::after {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  bottom: 0;
+  left: 0;
+  border: 30px solid #eee;
+  /* background: #f1c555; */
+  z-index: -2;
+  transform: rotate(10deg);
+}
+
+.container .txt {
+  column-count: 2;
+  column-gap: 30px;
+}
+
+.container p {
+  line-height: 1.6;
+  margin-bottom: 1em;
+}
+
+.container p:first-child::first-letter {
+  float: left;
+  font-size: 40px;
+  padding-right: 10px;
+}
